@@ -1,0 +1,71 @@
+ShareCare Application
+
+Software and Frameworks Used:
+1. Microsoft Visual Studio 2019 
+2. Microsoft Sql Server Management Studio 18
+
+About:
+This application allows users to seek and give help to each other by donation. People in distress can post about their troubles and distress and people who really want to help others around them can find them and help them. The main purpose of this application is to provide a platform for everyone to make the world a better place through helping each other.
+
+Funtionalities:
+
+Donor:
+-Regiser Account
+-Login
+-Make Posts
+-Make Donations
+-Update Profile Details
+-Delete Account Permanently
+-View Donation History
+-Report Bugs and Provide Feedback
+-Logout
+
+Receiver:
+-Regiser Account
+-Login
+-Make Posts to ask for help 
+-Update Profile Details
+-Delete Account Permanently
+-View Donation History
+-Report Bugs and Provide Feedback
+-Logout
+
+Admin:
+-Login
+-View User Profile Details
+-View User Doantion Details
+-View User Post Details
+-Delete User Account 
+-Delete User Posts
+-Logout
+
+User Guide:
+1. User has to register and create an account first by clicking the "Don't have an account" label if he/she already doesn't have an account.
+2. After creating an account, the application will then take the user to the login page where he/she has to login with the email and password, he/she created the account with.
+3. The user can then make a post from their account which will appear in their account timeline and also in the home feed of others along with his/her phone number so that people can contact them regarding the assistance they need, or make a donation through bkash or Nogod etc.
+4.Users will also be abale to donate through the application and this donation details along with the date at which the donation was made will be saved in the "Donation History" option, which the user will be able to view later.
+5.The user will be able to update their account details such as phone number, username, organization etc.
+6.The user will be able to delete their account permanently and has to register a new account if they want to use the application again in the future.
+7.The user can know more about the application by going to the "FAQ" option.
+8.The user will be able to report any  problems they are facing with the application or any bugs they are facing.
+
+Operating Systems:
+-Windows XP
+-Windows Vista SP2
+-Windows 7 SP1
+-Windows 8, 8.1
+-Windows 10
+-Windows 11
+
+Developed By:
+1. MAISHA SHAMS ----> 20-43359-1
+2. SADIA ISLAM KATHI ----> 20-42319-1
+3. MD AMIR HAMZA ----> 19-41219-2
+
+Supervised By:
+MD. NAZMUL HOSSAIN
+LECTURER, CS
+AMERICAN INTERNATIONAL UNIVERSITY BANGLADESH
+
+
+
