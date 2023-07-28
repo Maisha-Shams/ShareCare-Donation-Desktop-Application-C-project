@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC5DA3F5-53A3-4287-A276-D85349DC6851}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ShareCare</RootNamespace>
+    <AssemblyName>ShareCare</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcountCreated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcountCreated.Designer.cs">
+      <DependentUpon>AcountCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faq.Designer.cs">
+      <DependentUpon>Faq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactInfo.Designer.cs">
+      <DependentUpon>ContactInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation.Designer.cs">
+      <DependentUpon>Donation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonationTracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonationTracker.Designer.cs">
+      <DependentUpon>DonationTracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentOptions.Designer.cs">
+      <DependentUpon>PaymentOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SHARECAREDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHARECAREDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHARECAREDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHARECAREDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHARECAREDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHARECAREDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHARECAREDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHARECAREDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHARECAREDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHARECAREDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHARECAREDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHARECAREDataSet5.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcountCreated.resx">
+      <DependentUpon>AcountCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faq.resx">
+      <DependentUpon>Faq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactInfo.resx">
+      <DependentUpon>ContactInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation.resx">
+      <DependentUpon>Donation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonationTracker.resx">
+      <DependentUpon>DonationTracker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentOptions.resx">
+      <DependentUpon>PaymentOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SHARECAREDataSet.xsc">
+      <DependentUpon>SHARECAREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHARECAREDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHARECAREDataSet.xss">
+      <DependentUpon>SHARECAREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet1.xsc">
+      <DependentUpon>SHARECAREDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHARECAREDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHARECAREDataSet1.xss">
+      <DependentUpon>SHARECAREDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet2.xsc">
+      <DependentUpon>SHARECAREDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHARECAREDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHARECAREDataSet2.xss">
+      <DependentUpon>SHARECAREDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet3.xsc">
+      <DependentUpon>SHARECAREDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHARECAREDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHARECAREDataSet3.xss">
+      <DependentUpon>SHARECAREDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet4.xsc">
+      <DependentUpon>SHARECAREDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHARECAREDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHARECAREDataSet4.xss">
+      <DependentUpon>SHARECAREDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet5.xsc">
+      <DependentUpon>SHARECAREDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SHARECAREDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHARECAREDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHARECAREDataSet5.xss">
+      <DependentUpon>SHARECAREDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inkedgiving-donations-charity-foundation-support-concept-75686415.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageonline-co-roundcorner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageonline-co-roundcorner1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\136-1366211_group-of-10-guys-login-user-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\136-1366211_group-of-10-guys-login-user-icon-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageonline-co-roundcorner2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageonline-co-roundcorner3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\368-3689520_email-icons-grey-email-icon-pink-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200-2005246_19-security-padlock-icon-png-images-lock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\368-3689520_email-icons-grey-email-icon-pink-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200-2005246_19-security-padlock-icon-png-images-lock-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-dialog-ok-apply.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 2021-12-04 004004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ed888e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-undo-icon-circle-vector-260nw-334080548.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-undo-icon-circle-vector-260nw-3340805481.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\290-2908373_instagram-search-icon-gray-small-search-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\136-1366211_group-of-10-guys-login-user-icon-png2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\136-1366211_group-of-10-guys-login-user-icon-png3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default-avatar-profile-icon-vector-default-avatar-profile-icon-vector-social-media-user-image-vector-illustration-227787227.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default-avatar-profile-icon-vector-default-avatar-profile-icon-vector-social-media-user-image-vector-illustration-2277872271.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-icons-house-icon-design-png-favpng-F2RrKA6dg2Dps697ynh1yG2yr_t.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25a8110514a47839265f640169ee27f5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25a8110514a47839265f640169ee27f51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\886360_facebook_512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clients-icon-18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification-icon-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3642010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2044010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20440101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\make-donation-charity-donate-contribute-260nw-407747374.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\make-donation-charity-donate-contribute-260nw-4077473741.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-love-instagram-interface-like-flat-color-icon-vector-icon-png-image_1648048.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-chat-icon-comment-icon-dialogue-icon-5dd91e4ae8af82.1767168815745101549531.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44-446471_medium-image-grey-speech-bubble-png-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-chat-icon-comment-icon-dialogue-icon-5dd91e4ae8af82.17671688157451015495311.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share-sign-gray-icon-forward-message-symbol-vector-33411334.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-undo-icon-circle-vector-260nw-3340805482.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default-avatar-profile-icon-vector-default-avatar-profile-icon-vector-social-media-user-image-vector-illustration-2277872272.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-camera-icon-png-vector-260nw-1945941829.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucb1-202106292209241 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucb1-202106292209241 %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brac-bank-logoo %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamedd %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EBL-Logoo %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled-2-16033763481g58 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa-logo-png-transparent %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mastercard-logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbbl %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoticon-emoji-frown-sadness-face-png-favpng-nE45fgkkNqhH0F2ZwxC0QzLV1-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-camera-icon-png-vector-260nw-19459418291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-camera-icon-png-vector-260nw-19459418292.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
